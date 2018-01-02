@@ -1,7 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>cdorst</Authors>
+    <Description>Helper for initializing a new Git repository with a GNU GPL 3.0 license and .gitattributes and .gitignore files for Visual Studio solutions</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>CDorst.DevOps.VersionControl.Functions.InitializeDotNetGnuGitRepository</PackageId>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CDorst.DevOps.VersionControl.Functions.AddNewRepositoryFiles" Version="1.0.0" />
+    <PackageReference Include="CDorst.DevOps.VersionControl.Functions.AddOriginGitRemoteAndPush" Version="1.0.0" />
+    <PackageReference Include="CDorst.DevOps.VersionControl.Functions.RunGitInitCommand" Version="1.0.0" />
+  </ItemGroup>
 
 </Project>
